@@ -11,9 +11,8 @@ export default function Home() {
   return (
     <SiteThemeProvider theme={{ styleVariant: 'futuristicAndOutOfBox', colorTemplate: 2, textAnimation: 'slide' }}>
       <div id="nav" data-section="nav">
-        <NavbarLayoutFloatingOverlay 
+        <NavbarLayoutFloatingOverlay
           logoSrc="/images/logo.svg"
-          logoAlt="NovaSaaS"
           navItems={[{ name: 'hero', id: 'hero' }, { name: 'about', id: 'about' }, { name: 'how-to-buy', id: 'how-to-buy' }, { name: 'tokenomics', id: 'tokenomics' }, { name: 'footer', id: 'footer' }]}
           buttonText="Get started"
           onButtonClick={() => { /* handle click */ }}
