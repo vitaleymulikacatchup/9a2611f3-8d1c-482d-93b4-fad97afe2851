@@ -1,10 +1,11 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
 import SplitAbout from '@/components/sections/layouts/about/SplitAbout';
 import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
 import TextGridTokenomics from '@/components/sections/layouts/tokenomics/TextGridTokenomics';
 import FooterLogo from '@/components/footer/FooterLogo';
+import NavbarLayoutFloatingOverlay from '@/components/navigation/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <NavbarLayoutFloatingOverlay 
           logoSrc="/images/logo.svg"
           logoAlt="NovaSaaS"
-          navItems={[{ name: '#hero', id: 'hero' }, { name: '#about', id: 'about' }, { name: '#how-to-buy', id: 'how-to-buy' }, { name: '#tokenomics', id: 'tokenomics' }, { name: '#footer', id: 'footer' }]}
+          navItems={[{ name: 'hero', id: 'hero' }, { name: 'about', id: 'about' }, { name: 'how-to-buy', id: 'how-to-buy' }, { name: 'tokenomics', id: 'tokenomics' }, { name: 'footer', id: 'footer' }]}
           buttonText="Get started"
           onButtonClick={() => { /* handle click */ }}
         />
